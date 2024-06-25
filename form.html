@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lav nyt opslag</title>
+      <style>
+        h1 {
+          color: #8A2BE2;
+          font-weight: bolder;
+        }
+      </style>
+  </head>
+
+  <body>
+    <h1>Lav et nyt opslag</h1>
+    <h3> <a href="forside.php">Forside</a> <br> </h3>
+    <h3> <a href="loginform.html">Log ind</a> <br> </h3>
+    <h3> <a href="logud.php">Log ud</a> <br> </h3>
+    <h3> <a href="addbrugerform.html">Opret bruger</a> <br> </h3>
+    <h3> <a href="opgave3.php">Liste over brugere</a> <br> </h3>
+
+    <form action="add.php" method="POST" enctype="multipart/form-data">
+      <label for="uid">Dit brugernavn:</label> <br>
+      <input type="text" name="uid" size="20"><br><br>
+
+        <label for="titel">Titel:</label> <br>
+        <input type="text" name="titel" size="20"><br><br>
+        <label for="indhold">Indhold:</label> <br>
+        <input type="text" name="indhold" style="height: 100px; width: 300px;"><br><br>
+        <label for="myFile">Upload et billed (Tager kun imod .png filer)</label> <br>
+        <input type="file" id="myFile" name="filename" accept=".png"> <br> <br>
+        <input type="submit" value="Submit">
+
+    </form>
+  </body>
+</html>
